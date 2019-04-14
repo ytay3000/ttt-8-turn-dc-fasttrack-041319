@@ -39,5 +39,9 @@ def position_taken?(board,index)
 end
 
 def turn
-  
+  puts "Where would you like to go?"
+  input = gets.strip
+  index = input_to_index(input)
+  board = move(board,index,"X")
+  display_board(board)
 end
