@@ -5,3 +5,4 @@ require_relative '../lib/turn.rb'
 # Code your CLI Here
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Welcome to Tic Tac Toe!"
+turn
