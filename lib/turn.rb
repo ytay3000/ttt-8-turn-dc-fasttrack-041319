@@ -42,6 +42,12 @@ def turn
   puts "Where would you like to go?"
   input = gets.strip
   index = input_to_index(input)
-  board = move(board,index,"X")
+  if valid_move? == FALSE
+    puts "Invalid move. Please choose another position."
+    input = gets.strip
+    index
+  else
+    board = move(board,index,"X")
+  end
   display_board(board)
 end
